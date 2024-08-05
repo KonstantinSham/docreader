@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="202dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/backtint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="227dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Document Reader"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/rounded_top_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/all_btn"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_all"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/all_btn_overlay"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/btn_all"
+            app:layout_constraintBottom_toBottomOf="@id/all_btn"
+            app:layout_constraintEnd_toEndOf="@id/all_btn"
+            app:layout_constraintStart_toStartOf="@id/all_btn"
+            app:layout_constraintTop_toTopOf="@id/all_btn" />
+
+        <ImageButton
+            android:id="@+id/pdf_btn"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/pdf"
+            app:layout_constraintStart_toEndOf="@+id/all_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/pdf_btn_overlay"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/pdf_all"
+            app:layout_constraintBottom_toBottomOf="@id/pdf_btn"
+            app:layout_constraintEnd_toEndOf="@id/pdf_btn"
+            app:layout_constraintStart_toStartOf="@id/pdf_btn"
+            app:layout_constraintTop_toTopOf="@id/pdf_btn" />
+
+        <ImageButton
+            android:id="@+id/doc_btn"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/doc"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pdf_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/doc_btn_overlay"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/doc_all"
+            app:layout_constraintBottom_toBottomOf="@id/doc_btn"
+            app:layout_constraintEnd_toEndOf="@id/doc_btn"
+            app:layout_constraintStart_toStartOf="@id/doc_btn"
+            app:layout_constraintTop_toTopOf="@id/doc_btn" />
+
+        <ImageButton
+            android:id="@+id/xls_btn"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/xlc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/all_btn" />
+
+        <ImageView
+            android:id="@+id/xls_btn_overlay"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/xlc_all"
+            app:layout_constraintBottom_toBottomOf="@id/xls_btn"
+            app:layout_constraintEnd_toEndOf="@id/xls_btn"
+            app:layout_constraintStart_toStartOf="@id/xls_btn"
+            app:layout_constraintTop_toTopOf="@id/xls_btn" />
+
+        <ImageButton
+            android:id="@+id/txt_btn"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt"
+            app:layout_constraintStart_toEndOf="@+id/xls_btn"
+            app:layout_constraintTop_toBottomOf="@+id/pdf_btn" />
+
+        <ImageView
+            android:id="@+id/txt_btn_overlay"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/txt_all"
+            app:layout_constraintBottom_toBottomOf="@id/txt_btn"
+            app:layout_constraintEnd_toEndOf="@id/txt_btn"
+            app:layout_constraintStart_toStartOf="@id/txt_btn"
+            app:layout_constraintTop_toTopOf="@id/txt_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
