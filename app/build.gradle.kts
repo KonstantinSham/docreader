@@ -9,8 +9,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.documentreader"
-        minSdk = 26
+        applicationId = "org.online.lite.app"
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -53,9 +53,6 @@ dependencies {
     implementation("org.apache.poi:poi-ooxml:5.2.2")
     implementation("org.apache.poi:poi-scratchpad:5.2.3")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
-
-
-
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

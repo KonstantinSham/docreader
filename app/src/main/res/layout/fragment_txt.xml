@@ -2,9 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,6 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -46,8 +58,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-
 
             <TextView
                 android:id="@+id/textView"
@@ -75,27 +85,24 @@
         android:layout_height="wrap_content"
         android:text="File Name"
         android:textSize="16sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout" />
 
     <LinearLayout
         android:id="@+id/linear_slider"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:background="@color/blue"
-        android:layout_marginBottom="10dp"
         android:elevation="20dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/linear">
+        app:layout_constraintBottom_toTopOf="@id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/pageIndicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:fontFamily="@font/inter_semibold"
             android:text="0/0"
             android:textAlignment="center"
@@ -119,8 +126,8 @@
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginBottom="50dp"
         android:background="@color/blue"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

@@ -60,9 +60,9 @@
             android:id="@+id/all_btn"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/button_all"
+            android:background="@drawable/all_files1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,12 +84,11 @@
             android:id="@+id/pdf_btn"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="22dp"
+            android:layout_marginLeft="15dp"
             android:background="@drawable/pdf"
+            app:layout_constraintBottom_toBottomOf="@+id/all_btn"
             app:layout_constraintStart_toEndOf="@+id/all_btn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/all_btn" />
 
         <ImageView
             android:id="@+id/pdf_btn_overlay"
@@ -109,14 +108,12 @@
             android:id="@+id/doc_btn"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="15dp"
             android:background="@drawable/doc"
+            app:layout_constraintBottom_toBottomOf="@+id/pdf_btn"
 
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/pdf_btn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/pdf_btn" />
 
         <ImageView
             android:id="@+id/doc_btn_overlay"
@@ -136,7 +133,7 @@
             android:id="@+id/xls_btn"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/xlc"
             app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +157,7 @@
             android:id="@+id/txt_btn"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="22dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/txt"
             app:layout_constraintStart_toEndOf="@+id/xls_btn"
